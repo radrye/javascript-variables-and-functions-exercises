@@ -1,9 +1,12 @@
-function setOutput(value) {
+function addOutput(value) {
   var output = document.getElementById("output");
 
   if (output) {
-  	output.innerText = value;
+    var paragraph = document.createElement("p");
+    paragraph.innerText = value;
+
+    output.appendChild(paragraph);
   } else {
-  	alert("element with id \"output\" not found!");
+    alert("element with id \"output\" not found!");
   }
 }
