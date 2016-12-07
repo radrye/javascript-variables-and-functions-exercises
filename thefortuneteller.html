@@ -15,13 +15,21 @@
     <h1>The Fortune Teller</h1>
     <div id="output"></div>
     <script>
-      // YOUR CODE GOES HERE
-      var numberOfChildren    = 10;
-      var partnersName        = "Prince Eric";
-      var geographicLocation  = "Alaska";
-      var jobTitle            = "fisherwoman";
 
-      var fortune = " You will be a " 
+/*
+Why pay a fortune teller when you can just program your fortune yourself?
+
+Write a function named tellFortune that:
+takes 4 arguments: number of children, partner's name, geographic location, job title.
+outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
+Call that function 3 times with 3 different values for the arguments. */
+      function tellFortune(
+        numberOfChildren, 
+        partnersName,
+        geographicLocation,
+        jobTitle)  {
+      
+        var fortune = " You will be a " 
                   + jobTitle
                   + " in "
                   + geographicLocation
@@ -31,8 +39,13 @@
                   + numberOfChildren
                   + " kids.";
       //console.log(fortune);
-      addOutput(fortune);
+        addOutput(fortune);
+      }
 
+      tellFortune(100, "A", "B", "C");
+      tellFortune(200, "1", "2", "3");
+      tellFortune(300, "a", "b", "c");
+      
       // Call the addOutput function with your output value
       // when you are ready.
       // Example: addOutput(outputValue);
