@@ -15,27 +15,38 @@
     <h1>The Age Calculator</h1>
     <div id="output"></div>
     <script>
-      // YOUR CODE GOES HERE
+/*
+Forgot how old you are? Calculate it!
 
-      var birthYear = 1984;
-      var futureYear = 2080;
-      var ageNow = futureYear - birthYear;
-      var ageNow2 = ageNow + 1;
-      
-      var ageCalculatorOutput = "I will be either "
-                              + ageNow
-                              + " or "
-                              + ageNow2
-                              + " in "
-                              + futureYear
-                              + "."
+Write a function named calculateAge that:
+takes 2 arguments: birth year, current year.
+calculates the 2 possible ages based on those years.
+outputs the result to the screen like so: "You are either NN or NN"
+Call the function three times with different sets of values.
+Bonus: Figure out how to get the current year in JavaScript instead of passing it in. */
 
+    // this gets call-ED by the call-ER and has
+    // to do with whatever it's supposed to do..
+    // i.e., whatever functionality was promised
+    function calculateAge(birthYear, currentYear) {
+      var possibleAge1 = currentYear - birthYear;
+      var possibleAge2 = possibleAge1 - 1;
 
-    addOutput(ageCalculatorOutput);
+      var output = "I will be either "
+                    + possibleAge1
+                    + " or "
+                    + possibleAge2
+                    + " in "
+                    + currentYear;
 
-      // Call the addOutput function with your output value
-      // when you are ready.
-      // Example: addOutput(outputValue);
+      addOutput(output);
+    }
+    // this is fulfilled by the function
+    // call-ER
+    calculateAge(1985, 2016);
+    calculateAge(1985, 2017);
+    calculateAge(1985, 2018);
+
     </script>
   </body>
 </html>
