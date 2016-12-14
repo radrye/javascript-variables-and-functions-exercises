@@ -15,14 +15,27 @@
 	Now store a fahrenheit temperature into a variable.
 	Convert it to celsius and output "NN°F is NN°C."
 */
-var celsiusTemp = 50;
-var convertFarenheit = celsiusTemp * (9/5) + 32;
-var answer = convertFarenheit + "°F is " + celsiusTemp + "°C.";
-console.log(answer);
 
+/*
+[X] Create a function called celsiusToFahrenheit:
+[X] Pass a celsius temperature to the function.
+[X] Convert it to fahrenheit and output "NN°C is NN°F".
 
-// Ava Ryerson
-// var firstName = "Ava";
-// var lastName = "Ryerson";
-// var fullName = firstName + " " + lastName;
-// console.log(fullName);
+[X] Create a function called fahrenheitToCelsius
+[X] Pass a fahrenheit temperature to the function.
+[X] Convert it to celsius and output "NN°F is NN°C."
+*/
+function celsiusToFahrenheit(celsiusTemp) {
+	var convertFarenheit = celsiusTemp * (9/5) + 32;
+	var answer = convertFarenheit + "°F is " + celsiusTemp + "°C.";
+	console.log(answer);
+}
+
+function fahrenheitToCelsius(fahrenheitTemp) {
+  var convertCelsius = (fahrenheitTemp - 32) * (5/9);
+  var answer = convertCelsius + "°C is " + fahrenheitTemp + " °F.";
+  console.log(answer);
+}
+celsiusToFahrenheit(20);
+fahrenheitToCelsius(80);
+
