@@ -15,13 +15,29 @@ Calculate the circumference based on the radius, and output "The circumference i
 Calculate the area based on the radius, and output "The area is NN".
 */
 
-var radius = 48;
-var circumferenceCircle = 2 * Math.PI * radius;
-var areaCircle = 2 * Math.PI * radius * radius;
 
-var circAnswer = "The circumference is " + circumferenceCircle + ".";
-var areaAnswer = "The area is " + areaCircle + ".";
+/*
+[X] Create a function called calcCircumfrence:
+
+[X] Pass the radius to the function.
+[X] Calculate the circumference based on the radius, and output "The circumference is NN".
+[X] Create a function called calcArea:
+
+[X] Pass the radius to the function.
+[X] Calculate the area based on the radius, and output "The area is NN".*/
+
+function calcCircumference(radius) {
+	var circumference = 2 * Math.PI * radius;
+	var output = "The circumference is " + circumference + ".";
+	console.log(output);
+}
+
+function calcArea(radius) {
+	var area = 2 * Math.PI * radius * radius;
+	var output = "The area is " + area + ".";
+	console.log(output);
+}
 
 
-console.log(circAnswer);
-console.log(areaAnswer);
+calcCircumference(5);
+calcArea(5);
