@@ -12,8 +12,7 @@ var lifetimeSupply = "You will need "
                    + maxAge
                    + "."
 
-addOutput(lifetimeSupply);                
+console.log(lifetimeSupply);                
 
-// Call the addOutput function with your output value
+// Call the console.log function with your output value
 // when you are ready.
-// Example: addOutput(outputValue);

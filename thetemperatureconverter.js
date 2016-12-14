@@ -5,6 +5,5 @@
 //   (fahrenheit - 32) * (5/9)
 // YOUR CODE GOES HERE
 
-// Call the addOutput function with your output value
+// Call console.log function with your output value
 // when you are ready.
-// Example: addOutput(outputValue);

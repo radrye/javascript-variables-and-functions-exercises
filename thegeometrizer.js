@@ -5,6 +5,5 @@
 //   e.g. console.log(Math.PI) should output 3.141592653589793
 // YOUR CODE GOES HERE
 
-// Call the addOutput function with your output value
+// Call the console.log function with your output value
 // when you are ready.
-// Example: addOutput(outputValue);

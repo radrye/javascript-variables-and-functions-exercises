@@ -22,7 +22,7 @@ function calculateAge(birthYear, currentYear) {
                 + " in "
                 + currentYear;
 
-  addOutput(output);
+  console.log(output);
 }
 // this is fulfilled by the function
 // call-ER

@@ -20,14 +20,13 @@ function tellFortune(
             + " with "
             + numberOfChildren
             + " kids.";
-//console.log(fortune);
-  addOutput(fortune);
+
+  console.log(fortune);
 }
 
 tellFortune(100, "A", "B", "C");
 tellFortune(200, "1", "2", "3");
 tellFortune(300, "a", "b", "c");
 
-// Call the addOutput function with your output value
+// Call the console.log function with your output value
 // when you are ready.
-// Example: addOutput(outputValue);
